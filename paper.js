@@ -14,7 +14,7 @@ class paper
 		this.y=y;
 		this.r=r
 		this.body=Bodies.circle(this.x, this.y, this.r/2, options)
-		this.image = loadImage("paper.png");
+		//this.image = loadImage("paper.png");
 		World.add(world, this.body);
 
 	}
@@ -28,8 +28,9 @@ class paper
 			rectMode(CENTER)
 			strokeWeight(3);
 			fill(255,0,255)
-			imageMode(CENTER);
-        	image(this.image, 0, 0, this.x, this.y);
+			//imageMode(CENTER);
+        		//image(this.image, 0, 0, this.x, this.y);
+			ellipse(0,0,this.r, this.r);
 			pop()
 			
 	}
